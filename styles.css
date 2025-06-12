@@ -6,13 +6,25 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0%;
  }
 
+ * {
+    box-sizing: border-box;
+ }
+
 #logo {
-    width: 700px;
-    height: 400px;
-    display: block;
+    width: 90vw;
+    height: auto;
+    max-width: 450px;
+    max-height: 150px;
+    display: inline-block;
+    object-fit: contain;
  margin-left: auto;
  margin-right: auto;
  padding: 0%;
+}
+header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: black;
 }
 
 main{
@@ -105,9 +117,4 @@ footer {
 p {
    
     text-align: center;
-}
-header {
-    margin: 0;
-    padding: 0;
-    background-color: black;
 }
