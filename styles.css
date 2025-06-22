@@ -52,6 +52,7 @@ body {
     'Trebuchet MS', sans-serif;
     background-color: #0f0f0f;
     color: #ffffff;
+    overflow-x: hidden;
     }
 body::before {
     content: "";
@@ -354,6 +355,12 @@ p:hover {
     justify-content: center;
 }
 
+.side, .content, .bottom {
+    width: 45vw;
+    max-width:100%;
+     box-shadow: 0 0 15px #39ff14aa;
+}
+
 section {
      transition: all 0.3s ease;
     filter: brightness(100%) contrast(100%);
@@ -379,4 +386,31 @@ dl, dt, dd {
 dl:hover, dt:hover, dd:hover {
     transform: scale(1.01);
     filter: brightness(110%) contrast(120%) saturate(130%) blur(0.3px);
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side {
+    order: 1;
+    width: 95vw;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    order: 2;
+    width: 95vw;
+    margin-bottom: 20px;
+  }
+
+  .bottom {
+    order: 3;
+    width: 95vw;
+    margin-bottom: 20px;
+  }
 }
