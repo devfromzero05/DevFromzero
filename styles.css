@@ -391,26 +391,26 @@ dl:hover, dt:hover, dd:hover {
 
 
 @media (max-width: 768px) {
-  body {
+  .container {
     flex-direction: column;
     align-items: center;
   }
 
+  .side, .bottom, .content {
+    width: 95vw;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
   .side {
     order: 1;
-    width: 95vw;
-    margin-bottom: 20px;
   }
 
   .content {
     order: 2;
-    width: 95vw;
-    margin-bottom: 20px;
   }
 
   .bottom {
     order: 3;
-    width: 95vw;
-    margin-bottom: 20px;
   }
 }
