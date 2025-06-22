@@ -414,19 +414,24 @@ dl:hover, dt:hover, dd:hover {
   }
 
   nav > ul {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     background: linear-gradient(to right,#39ff14,  #ffffff, #39ff14);;
-    gap: 8px;
-    padding: 0;
-    font-size: 1em;
+    gap: 2px;
+    padding: 0 2px;
+    font-size: 0.85em;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   nav li {
     border-left: 2px solid black;
     border-bottom: none;
     text-align: center;
-    padding: 8px 5px;
+    padding: 4px 2px;
+    text-align: center;
+    white-space: nowrap;
   }
 
   nav li:first-child {
