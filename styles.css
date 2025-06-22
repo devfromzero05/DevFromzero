@@ -400,6 +400,7 @@ dl:hover, dt:hover, dd:hover {
     width: 95vw;
     max-width: 100%;
     margin-bottom: 20px;
+    box-sizing: border-box;
   }
 
   .side {
@@ -413,4 +414,8 @@ dl:hover, dt:hover, dd:hover {
   .bottom {
     order: 3;
   }
+}
+
+* {
+    box-sizing: border-box;
 }
