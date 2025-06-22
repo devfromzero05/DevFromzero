@@ -414,21 +414,23 @@ dl:hover, dt:hover, dd:hover {
   }
 
   nav > ul {
-    flex-direction: column;
-    gap: 0;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(to right,#39ff14,  #ffffff, #39ff14);;
+    gap: 8px;
     padding: 0;
     font-size: 1em;
   }
 
   nav li {
-    border-left: none;
-    border-bottom: 1px solid #39ff14;
+    border-left: 2px solid black;
+    border-bottom: none;
     text-align: center;
-    padding: 8px 0;
+    padding: 8px 5px;
   }
 
-  nav li:last-child {
-    border-bottom: none;
+  nav li:first-child {
+    border-left: none;
   }
 
   h1, h2, h3, h4, h5, h6 {
