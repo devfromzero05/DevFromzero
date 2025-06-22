@@ -305,16 +305,16 @@ p:hover {
 
 .container {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     gap: 20px;
     padding: 40px;
 
 }
 
-.leftside {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
+.side, .bottom {
+    width: 22vw;
+    max-width: 350px;
 }
 
 
@@ -333,6 +333,7 @@ p:hover {
 
 .content  {
     flex: 1;
+    min-width: 0;
     height: auto;
     background: #1e1e1e;
     border: 4px solid #b0b0b0;
@@ -393,21 +394,19 @@ dl:hover, dt:hover, dd:hover {
 /* --- MOBILE OPTIMIZATION --- */
 @media (max-width: 768px) {
   .container {
-    display: flex;
     flex-direction: column;
-    align-items: stretch;
     padding: 10px;
     gap: 10px;
   }
 
   .side {
-    order: 1;
+    order: 1; width: 100%;
   }
   .content {
-    order: 2;
+    order: 2; width: 100%;
   }
   .bottom {
-    order: 3; 
+    order: 3; width: 100%;
   }
 
   .side, .content, .bottom {
